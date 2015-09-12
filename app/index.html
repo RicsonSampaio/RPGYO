@@ -1,0 +1,28 @@
+<!doctype html>
+<html class="no-js" ng-app="rpg">
+  <head>
+    <meta charset="utf-8">
+    <title>RPG</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"></link>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css"></link>
+    <link rel="stylesheet" href="styles/efeitos.css">
+    <!-- <meta name="description" content="">
+    <meta name="viewport" content="width=device-width"> -->
+  </head>
+  <body ng-controller="MainController">
+
+  <div class="container">
+    <ng-view></ng-view>
+  </div><!-- FIM DO CONTAINER --> 
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/ng-underscore/build/ng-underscore.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main-controller.js"></script>
+    <script src="scripts/directives/minhas-diretivas.js"></script>
+  </body>
+  <footer>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/js/bootstrap.js"></link>
+  </footer>
+</html>

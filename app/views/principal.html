@@ -1,0 +1,32 @@
+<div class="jumbotron">
+  <h1 class="text-center">RPG</h1>
+</div> <!--FIM DO JUMBOTRON -->
+<!-- FIM DA ROW-->
+
+<div class="row">
+  <div class="col-md-12">
+    <form>
+      <div class="input-group">
+        <span class="input-group-btn">
+          <a href="#/novaClasse" type="button" class="btn btn-primary">Nova classe</a>
+        </span> 
+        <input ng-model="filtro" ng-model-options="{ debounce: 500 }" class="form-control" placeholder="Buscar">
+      </div><!-- FIM DO INPUT GROUP-->
+    </form>
+  </div> <!-- FIM COL-MD-12 -->
+</div> <!-- FIM DA ROW -->
+
+<!-- <div ng-include="'views/painel.html'"></div> -->
+<div class="row">
+  <meu-painel class="col-md-2 painel-animado" ng-repeat="nivel in niveis | filter: filtro" titulo="{{nivel.trilha}}">
+      <img class="img-responsive center-block" src="{{nivel.urlFoto}}" alt="{{nivel.trilha}}">
+      <div class="text-center"></br>
+        <p>{{nivel.nivelUm}}</p>
+        <p>{{nivel.nivelDois}}</p>
+        <p>{{nivel.nivelTres}}</p>
+        <p>{{nivel.nivelQuatro}}</p>
+        <p>{{nivel.nivelCinco}}</p>
+        <p>{{nivel.nivelSeis}}</p>
+      </div> <!-- FIM DOS NIVEIS-->
+  </meu-painel>
+</div><!-- FIM DA ROW -->
